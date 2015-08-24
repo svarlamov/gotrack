@@ -6,7 +6,7 @@ import (
 
 func ReportError(err error, message string) {
     m := make(map[string]string)
-    ReportCriticalVerbose(err, message, m)
+    ReportErrorVerbose(err, message, m)
 }
 
 func ReportCritical(err error, message string) {
